@@ -1,0 +1,136 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: aliceblue;
+}
+
+.liquid-ui-left {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 27% 69% 40% 46% / 34% 38% 52% 54%;
+  animation: move 10s linear infinite;
+}
+
+.liquid-ui-center {
+  width: 300px;
+  height: 300px;
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  filter: blur(20px);
+  animation: move2 12s linear infinite;
+}
+
+.liquid-ui-right {
+  width: 300px;
+  height: 300px;
+  background: url("./assets/moon_and_star3.png");
+  background-size: cover;
+  background-position: center center;
+  border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  filter: blur(0);
+  animation: move3 10s linear infinite;
+}
+
+
+@keyframes move {
+  0% {
+    border-radius: 27% 69% 40% 46% / 34% 38% 52% 54%;
+  }
+
+  16.666% {
+    border-radius: 35% 65% 45% 50% / 40% 45% 55% 60%;
+  }
+
+  33.333% {
+    border-radius: 45% 55% 50% 50% / 50% 50% 50% 50%;
+  }
+
+  50% {
+    border-radius: 55% 50% 55% 50% / 50% 50% 50% 50%;
+  }
+
+  66.666% {
+    border-radius: 65% 45% 60% 40% / 55% 45% 40% 55%;
+  }
+
+  83.333% {
+    border-radius: 27% 69% 40% 46% / 34% 38% 52% 54%;
+  }
+
+  100% {
+    border-radius: 27% 69% 40% 46% / 34% 38% 52% 54%;
+  }
+}
+
+@keyframes move2 {
+  0% {
+    border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  }
+
+  20% {
+    border-radius: 60% 40% 70% 30% / 50% 40% 60% 30%;
+  }
+
+  40% {
+    border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  }
+
+  60% {
+    border-radius: 60% 40% 70% 30% / 50% 40% 60% 30%;
+  }
+
+  80% {
+    border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  }
+
+  100% {
+    border-radius: 20% 60% 30% 50% / 30% 50% 40% 50%;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    border-radius: 25% 60% 40% 50% / 30% 50% 40% 50%;
+    filter: blur(0);
+  }
+
+  16.666% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    filter: blur(0);
+  }
+
+  33.333% {
+    border-radius: 65% 35% 55% 45% / 55% 45% 45% 55%;
+    filter: blur(5px);
+  }
+
+  50% {
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+    filter: blur(10px);
+  }
+
+  66.666% {
+    border-radius: 25% 60% 40% 50% / 30% 50% 40% 50%;
+    filter: blur(10px);
+  }
+
+  83.333% {
+    border-radius: 15% 65% 25% 60% / 35% 60% 30% 50%;
+    filter: blur(5px);
+  }
+
+  100% {
+    border-radius: 25% 60% 40% 50% / 30% 50% 40% 50%;
+    filter: blur(0px);
+  }
+}
